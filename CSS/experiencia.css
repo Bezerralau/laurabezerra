@@ -62,9 +62,9 @@
 }
 
 .spaceinvaders-p {
-  font-size: 1.125rem;
-  line-height: 1.1;
-  font-weight: 500;
+  font-size: 0.875rem;
+  color: #525252;
+  line-height: 1.4;
   grid-column: 1/-1;
 }
 
@@ -114,6 +114,7 @@
   .experiencia-texto {
     font-size: 1.25rem;
   }
+
   .empresa-ano {
     position: initial;
     order: 1;

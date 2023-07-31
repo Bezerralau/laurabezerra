@@ -10,11 +10,31 @@ canvas {
   border: 1px solid none;
 }
 
-#startButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px 20px;
-  font-size: 20px;
+@media (max-width: 800px) {
+  #canvasContainer {
+    display: none;
+  }
+  #startButton {
+    order: 3;
+    margin: 20px auto;
+  }
+
+  #mobileMessage {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 801px) {
+  #startButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Centraliza o botão no meio da div "empresa" */
+    margin: 0; /* Remove a margem anterior */
+  }
 }

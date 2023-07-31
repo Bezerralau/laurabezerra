@@ -171,10 +171,11 @@ document.getElementById('startButton').addEventListener('click', () => {
   if (isMobileDevice()) {
     // Se for um dispositivo móvel, exibe a mensagem de aviso
     alert(
-      'Desculpe, o jogo Space Invaders só pode ser jogado em computadores.',
+      'O jogo para mobile ainda encontra-se em processo de desenvolvimento, mas você ainda pode jogar no computador. Obrigada pela paciência!',
     );
   } else {
     // Se não for um dispositivo móvel, inicia o jogo normalmente
+    document.getElementById('canvasContainer').style.display = 'block';
     document.getElementById('startButton').style.display = 'none';
     createEnemies();
     gameLoop();
