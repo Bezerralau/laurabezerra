@@ -36,6 +36,13 @@ let score = 0;
 let gameOver = false;
 let youWin = false;
 
+// Função para verificar se o dispositivo é móvel
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent,
+  );
+}
+
 function createEnemies() {
   for (let row = 0; row < enemyRows; row++) {
     for (let col = 0; col < enemyCols; col++) {
@@ -159,11 +166,19 @@ function gameLoop() {
   requestAnimationFrame(gameLoop);
 }
 
-// Event listener to start the game when the "Jogar Space Invaders" button is clicked
+// Event listener para o botão "Jogar Space Invaders"
 document.getElementById('startButton').addEventListener('click', () => {
-  document.getElementById('startButton').style.display = 'none';
-  createEnemies();
-  gameLoop();
+  if (isMobileDevice()) {
+    // Se for um dispositivo móvel, exibe a mensagem de aviso
+    alert(
+      'Desculpe, o jogo Space Invaders só pode ser jogado em computadores.',
+    );
+  } else {
+    // Se não for um dispositivo móvel, inicia o jogo normalmente
+    document.getElementById('startButton').style.display = 'none';
+    createEnemies();
+    gameLoop();
+  }
 });
 
 // Event listeners to control player movement and shooting
