@@ -4,7 +4,6 @@ const ctx = canvas.getContext('2d');
 const backgroundImage = new Image();
 backgroundImage.src = './img/img-fundo.jpg';
 backgroundImage.onload = function () {
-  startGame();
 };
 
 const player = {
