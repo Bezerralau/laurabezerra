@@ -3,8 +3,7 @@ const ctx = canvas.getContext('2d');
 
 const backgroundImage = new Image();
 backgroundImage.src = './img/img-fundo.jpg';
-backgroundImage.onload = function () {
-};
+backgroundImage.onload = function () {};
 
 const player = {
   x: canvas.width / 2,
