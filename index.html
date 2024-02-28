@@ -8,7 +8,6 @@
   <title>Laura Bezerra - Desenvolvedora e Game Designer</title>
   <meta name="description" content="Desenvolvedora Front End & Game Designer em formação">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -31,328 +30,635 @@
     <div>
       <h1>Desenvolvedora<br>Front End &<br> Game Designer <br>em formação</h1>
       <p>Localizada em São Paulo 🏙</p>
+      <p class="experiencia-texto">Oi! 👋 Meu nome é Laura e sou estudante de Design de Games. Eu atuo em diversas áreas enquanto aprofundo meus conhecimentos em games. Atuo como <strong>Web Designer</strong>, <strong>Desenvolvedora Front-End</strong>, <strong>Designer Gráfica</strong> e <strong>Game Tester</strong>. No que diz respeito a conhecimentos técnicos eu possuo habilidade em <strong>Blender</strong>, <strong>Unreal</strong>,<strong>Game Maker</strong>, <strong>Maya 3D</strong> e <strong>Adobe Substance 3D Painter</strong>. Além disso desenvolvo projetos de web utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Criador de sites wix</strong>, <strong>Wordpress</strong> e <strong>Elementor</strong>. E também trabalho com projetos de design utilizando <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>InDesign</strong>, <strong>After Effects</strong> e, principalmente, <strong>Figma</strong>.</p>
     </div>
   </main>
 
   <section class="experiencia" id="experiencia" aria-label="Experiência">
     <h2 class="subtitulo">Experiência</h2>
     <div>
-      <p class="experiencia-texto">Oi! 👋 Meu nome é Laura e sou estudante de Design de Games. Eu atuo em diversas áreas enquanto aprofundo meus conhecimentos em games. Atuo como <strong>Web Designer</strong>, <strong>Desenvolvedora Front-End</strong>, <strong>Designer Gráfica</strong> e <strong>Game Tester</strong>. No que diz respeito a conhecimentos técnicos eu possuo habilidade em <strong>Blender</strong>, <strong>Unreal</strong>,<strong>Game Maker</strong>, <strong>Maya 3D</strong> e <strong>Adobe Substance 3D Painter</strong>. Além disso desenvolvo projetos de web utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Criador de sites wix</strong>, <strong>Wordpress</strong> e <strong>Elementor</strong>. E também trabalho com projetos de design utilizando <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>InDesign</strong>, <strong>After Effects</strong> e, principalmente, <strong>Figma</strong>.</p>
-      <p class="experiencia-texto">Já trabalhei em áres de Marketing, Comunicação, Técnologia da Informação, Ensino e Entreterimento.</p>
 
-      <div class="empresa">
-        <span class="empresa-ano">Setembro 2023</span>
-        <h3 class="empresa-titulo">Video Institucional AnhangueraSP - Dia do programador</h3>
-        <video autoplay controls preload="auto">
-          <source src="./video/video-institucional-anhanguera.mp4" type="video/mp4">
-          <object>
-            <embed src="demo.mp4" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always">
-          </object>
-          Formato não suportado
-        </video>
+      <div class="pastas">
+        <button onclick="mostrarConteudo('design')">Design e Social Media</button>
+        <button onclick="mostrarConteudo('webdesign')">Web Design</button>
+        <button onclick="mostrarConteudo('frontend')">Front-End</button>
+        <button onclick="mostrarConteudo('games')">Desenvolvimento de Games</button>
+        <button onclick="mostrarConteudo('engenharia')">Engenharia Ambiental</button>
+        <button onclick="mostrarConteudo('comunicacao')">Comunicação</button>
+        <button onclick="mostrarConteudo('voluntariado')">Voluntariado</button>
       </div>
 
-      <div class="empresa">
-        <span class="empresa-ano">Julho 2023</span>
-        <h3 class="empresa-titulo">Space Invaders - Projeto Autoral</h3>
-        <span class="spaceinvaders-p">Jogo inspirado em Space Invaders utilizando JavaScript (aperte z para atirar e use as setas para mover)</span>
-        <div id="canvasContainer">
-          <canvas id="gameCanvas" width="600" height="400"></canvas>
+
+      <div id="conteudo-design" style="display: none;">
+        <!-- Conteúdo da pasta Design -->
+        <div class="pastas">
+          <button onclick="mostrarSubconteudo('banners')">Banners</button>
+          <button onclick="mostrarSubconteudo('post')">Post</button>
+          <button onclick="mostrarSubconteudo('comunicados')">Comunicados</button>
         </div>
-        <button class="portifolio" id="startButton">Jogar Space Invaders</button>
-      </div>
 
-      <div id="mobileMessage" style="display: none;">
-        <p>Desculpe, o jogo Space Invaders só pode ser jogado em computadores.</p>
-      </div>
+        <div id="subconteudo-banners" class="design-subconteudo" style="display: none;">
 
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Out 2023 - Atualmente</span>
-          <h3 class="empresa-titulo"> Centro Cultural Astrolabio </h3>
-          <p class="empresa-texto"> Participei como freelancer na criação do web design da empresa através do criador de sites wix, e desenvolvi o site completo com a automação. Neste projeto tive a oportunidade de aprender mais sobre a criação de sites e-commerce e desenvolver minhas habilidades de venda. </p>
-          <div class="preview">
-            <iframe src="https://www.oastrolabio.com.br" frameborder="0" width="600" height="400"></iframe>
+          <!-- Conteúdo 1 - Banners Anhanguera-->
+          <div class="empresa">
+            <div class="coluna1">
+              <span class="empresa-ano">Ago 2023 - Nov 2023</span>
+              <h3 class="empresa-titulo"> Grupo Anhanguera SP </h3>
+              <p class="empresa-texto"> Participei designer na empresa criando posts e conteúdos para o site e para as redes sociais. </p>
+              <div class="preview">
+                <img src="./img/banner_anhanguera1.png" alt="Banner">
+                <img src="./img/banner_anhanguera2.png" alt="Banner">
+                <img src="./img/banner_anhanguera3.png" alt="Banner">
+                <img src="./img/banner_anhanguera4.png" alt="Banner">
+              </div>
+            </div>
+            <div class="coluna2">
+              <span class="empresa-titulo">Designer </span>
+              <ul class="empresa-habilidades">
+                <li>Marketing</li>
+                <li>Comunicação</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div id="subconteudo-post" class="design-subconteudo" style="display: none;">
+
+          <!-- Conteúdo 1 - Posts Genéricos -->
+          <div class="empresa">
+            <div class="coluna1">
+              <span class="empresa-ano">Ago 2023 - Nov 2023</span>
+              <h3 class="empresa-titulo"> Grupo Anhanguera SP </h3>
+              <p class="empresa-texto"> Participei designer e social media na empresa criando posts e conteúdos para o site e para as redes sociais.</p>
+              <div class="preview">
+                <div class="carrossel-lista">
+                  <h3>Posts Feitos para o Instagram do grupo Anhanguera SP</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera1.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera2.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera3.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera4.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera5.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera6.png" alt="post"></li>
+                    <li><img src="./img/post_anhanguera7.png" alt="post"></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="coluna2">
+              <span class="empresa-titulo">Designer </span>
+              <ul class="empresa-habilidades">
+                <li>Marketing</li>
+                <li>Comunicação</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Conteúdo 2 - Post Metro de SP -->
+          <div class="empresa">
+            <div class="coluna1">
+              <span class="empresa-ano">Ago 2023 - Nov 2023</span>
+              <h3 class="empresa-titulo"> Grupo Anhanguera SP </h3>
+              <p class="empresa-texto"> Participei como designer na criação da arte para propaganda da Universidade no metro de SP</p>
+              <div class="preview">
+                <img src="./img/post_anhanguerametrodesp.png" alt="post">
+              </div>
+            </div>
+            <div class="coluna2">
+              <span class="empresa-titulo">Designer </span>
+              <ul class="empresa-habilidades">
+                <li>Marketing</li>
+                <li>Comunicação</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
+          </div>
+
+
+          <!-- Conteúdo 3 - Posts em carrossel -->
+          <div class="empresa">
+            <div class="coluna1">
+              <span class="empresa-ano">Ago 2023 - Nov 2023</span>
+              <h3 class="empresa-titulo"> Grupo Anhanguera SP </h3>
+              <p class="empresa-texto"> Participei como designer e social media na criação de diversos carrosseis para o instagram do grupo Anhanguera SP.</p>
+              <div class="preview">
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Día de los Muertos</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel1.1.png" alt="post Carrossel" width="280" height="280"></li>
+                    <li><img src="./img/post_anhanguera_carrosel1.2.png" alt="post Carrossel" width="280" height="280"></li>
+                    <li><img src="./img/post_anhanguera_carrosel1.3.png" alt="post Carrossel" width="280" height="280"></li>
+                  </ul>
+                </div>
+
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Dia do designer feito com IA</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel2.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel2.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel2.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel2.4.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel2.5.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel2.6.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Momentos do Enem</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel3.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel3.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel3.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel3.4.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel3.5.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel3.6.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Motivos para cursar um graduação</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel4.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel4.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel4.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel4.4.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Adivinhe a profissão pelo Emoji</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel5.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel5.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel5.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel5.4.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel5.5.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel5.6.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Semana de prova</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel6.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel6.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel6.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel6.4.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel6.5.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+                <div class="carrossel-lista">
+                  <h3>Carrossel para o instagram - Dicas para conseguir um estágio</h3>
+                  <ul class="carrossel">
+                    <li><img src="./img/post_anhanguera_carrosel7.1.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel7.2.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel7.3.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel7.4.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel7.5.png" alt="post Carrossel"></li>
+                    <li><img src="./img/post_anhanguera_carrosel7.6.png" alt="post Carrossel"></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+            <div class="coluna2">
+              <span class="empresa-titulo">Designer </span>
+              <ul class="empresa-habilidades">
+                <li>Marketing</li>
+                <li>Comunicação</li>
+                <li>Figma</li>
+                <li>Photoshop</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Freelancer de Web Designer e desenvolvedora front-end </span>
+
+        <div id="subconteudo-comunicados" class="design-subconteudo" style="display: none;">
+          <!-- Conteúdo da pasta Comunicados -->
+          <img src="./img/comunicado_anhanguera1.png" alt="Comunicado">
+          <img src="./img/comunicado_anhanguera2.png" alt="Comunicado">
+        </div>
+
+      </div>
+
+
+
+      <div id="conteudo-webdesign" style="display: none;">
+
+        <!-- Conteúdo 1 - Inpplay -->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Outubro 2023</span>
+            <h3 class="empresa-titulo"> Inpplay </h3>
+            <p class="empresa-texto"> Participei como freelancer na criação da Identidade Visual e Web Design da empresa através do programa Figma. Neste projeto aprofundei meus conhecimentos em E-commerce e pude me especializar ainda mais em UX/UI Design e Web Design.</p>
+            <div class="preview">
+              <img src="./img/portifolio-inpplay.png" alt="Imagem do portifolio" width="600" height="400">
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Freelancer de Web Design</span>
+            <ul class="empresa-habilidades">
+              <li>Figma</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Web Design</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Marketing</li>
+              <li>E-Commerce</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://www.figma.com/file/7Vql9H9IiYy7xu7T3gsrW8/inpplay----Design?type=design&node-id=0%3A1&mode=design&t=Ldrz3iPutQ7yXkRU-1">Acesso ao design completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 2 - SXB -->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Junho 2023</span>
+            <h3 class="empresa-titulo"> SXB - Automação Condominial </h3>
+            <p class="empresa-texto"> Participei como freelancer na criação do web design da empresa através do programa Figma, e desenvolvi junto a equipe, o front-end da Home Page do site. Neste projeto tive a oportunidade de aprender mais a respeito de automação condominial e desenvolver minhas habilidade no framework React. </p>
+            <div class="preview">
+              <img src="img/portifolio-sxb.png" width="600" height="400">
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Freelancer de Web Designer e desenvolvedora front-end </span>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Tailwind</li>
+              <li>Web Design</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://www.figma.com/proto/OtIITalTfWaA2mvTaUWLxj/SXB-NextApp?page-id=0%3A1&type=design&node-id=246-2&viewport=243%2C238%2C0.13&scaling=min-zoom&starting-point-node-id=246%3A2&mode=design">Acesso ao design completo aqui</a>
+        </div>
+
+      </div>
+
+
+
+      <div id="conteudo-frontend" style="display: none;">
+        <!-- Conteúdo da pasta Front-End -->
+        <!-- Conteúdo 1 - Video Institucional -->
+        <div class="empresa">
+          <span class="empresa-ano">Setembro 2023</span>
+          <h3 class="empresa-titulo">Video Institucional AnhangueraSP - Dia do programador</h3>
+          <video autoplay controls preload="auto">
+            <source src="./video/video-institucional-anhanguera.mp4" type="video/mp4">
+            <object>
+              <embed src="demo.mp4" type="application/x-shockwave-flash" allowfullscreen="false" allowscriptaccess="always">
+            </object>
+            Formato não suportado
+          </video>
+        </div>
+
+        <!-- Conteúdo 2 - Centro Cultural Astrolabio-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Out 2023 - Atualmente</span>
+            <h3 class="empresa-titulo"> Centro Cultural Astrolabio </h3>
+            <p class="empresa-texto"> Participei como freelancer na criação do web design da empresa através do criador de sites wix, e desenvolvi o site completo com a automação. Neste projeto tive a oportunidade de aprender mais sobre a criação de sites e-commerce e desenvolver minhas habilidades de venda. </p>
+            <div class="preview">
+              <iframe src="https://www.oastrolabio.com.br" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Freelancer de Web Designer e desenvolvedora front-end </span>
+            <ul class="empresa-habilidades">
+              <li>WIX - Criador de Sites</li>
+              <li>WIX - Paymentes </li>
+              <li>Marketing</li>
+              <li>Comunicação</li>
+              <li>Web Design</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://www.oastrolabio.com.br">Acesso ao design completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 3 - Integra Soluções Digitais-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Nov 2023 - Fev 2024</span>
+            <h3 class="empresa-titulo">Integra Soluções Digitais </h3>
+            <p class="empresa-texto"> Participei como freelancer na criação do web design e do site da empresa através de HTML, CSS e JavaScript utilizando a hospedagem do Hostinger. Neste projeto tive a oportunidade de aprender mais sobre a criação de sites e-commerce e desenvolver minhas habilidades de venda. </p>
+            <div class="preview">
+              <iframe src="https://digitalintegra.com.br" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Freelancer de Web Designer e desenvolvedora front-end </span>
+            <ul class="empresa-habilidades">
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>Hospedagem Hostinger</li>
+              <li>Comunicação</li>
+              <li>Web Design</li>
+              <li>Figma</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://digitalintegra.com.br">Acesso ao design completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 4 - Anhanguera SP-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Agosto 2023 - Nov 2023</span>
+            <h3 class="empresa-titulo">Universidade Anhanguera São Paulo</h3>
+            <p class="empresa-texto">Iniciei meu estágio desenvolvendo o design completo do site oficial da Anhanguera SP através do Figma, Photoshop e Illustrator, e através do design criei os códigos das páginas utilizando HTML, CSS, JavaScript, Git e React. Como hospedagem utilizei a da Locaweb e através do GitHub actions realizei os deploys. Hoje desenvolvo os designs e códigos das novas landing pages do site.</p>
+            <div class="preview">
+              <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git Actions</li>
+              <li>Web Design</li>
+              <li>Landing Pages</li>
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Design Gráfico</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+              <li>Marketing</li>
+              <li>E-Commerce</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/">Veja o site completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 5 - Anhanguera SP - UNEGRO-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Nov 2023</span>
+            <h3 class="empresa-titulo">UNEGRO - União de Negros e Negras pela Igualdade.</h3>
+            <p class="empresa-texto">Dentro do meu estágio no grupo Anhanguera SP tive a oportunidade de criar o site para afiliados da UNEGRO. Fui responsável pelo design e criação da página.</p>
+            <div class="preview">
+              <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/UNEGROafiliado.html" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git Actions</li>
+              <li>Web Design</li>
+              <li>Landing Pages</li>
+              <li>Figma</li>
+              <li>Design Gráfico</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/">Veja o site completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 6 - Anhanguera SP - Prefeitura de SP-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Nov 2023</span>
+            <h3 class="empresa-titulo">Prefeitura de São Paulo - Curso preparatório para concurso Público.</h3>
+            <p class="empresa-texto">Dentro do meu estágio no grupo Anhanguera SP tive a oportunidade de criar o site para a prefeitura de São Paulo anunciando os cursos preparatórios e os concursos para esses cursos. Fui responsável pelo design e criação da página.</p>
+            <div class="preview">
+              <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/concursopublico.html" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git Actions</li>
+              <li>Web Design</li>
+              <li>Landing Pages</li>
+              <li>Figma</li>
+              <li>Design Gráfico</li>
+              <li>UX Design</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/concursopublico.html">Veja o site completo aqui</a>
+        </div>
+
+        <!-- Conteúdo 7 - Projeto Autoral-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">2022-2023</span>
+            <h3 class="empresa-titulo"> Projeto Autoral </h3>
+            <p class="empresa-texto"> Desenvolvi através do curso da Origamid, para complementar meu portifólio, um website utilizando HTML, CSS e JavaScript. Através desse projeto, pude aprimorar minhas habilidades como desenvolvedora Front End e de forma 100% auto didata, consegui elaborar um website utlizando o Visual Studio Code e a plataforma Github.</p>
+            <div class="preview">
+              <iframe src="https://portifoliolaura.github.io" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Website fictício Bikcraft</span>
+            <ul class="empresa-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>Web Design</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://portifoliolaura.github.io">Veja o site completo aqui</a>
+        </div>
+
+      </div>
+
+
+
+      <div id="conteudo-games" style="display: none;">
+
+        <!-- Conteúdo 1 - Space Invaders-->
+        <div class="empresa">
+          <span class="empresa-ano">Julho 2023</span>
+          <h3 class="empresa-titulo">Space Invaders - Projeto Autoral</h3>
+          <span class="spaceinvaders-p">Jogo inspirado em Space Invaders utilizando JavaScript (aperte z para atirar e use as setas para mover)</span>
+          <div id="canvasContainer">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+          </div>
+          <button class="portifolio" id="startButton">Jogar Space Invaders</button>
+        </div>
+        <div id="mobileMessage" style="display: none;">
+          <p>Desculpe, o jogo Space Invaders só pode ser jogado em computadores.</p>
+        </div>
+
+        <!-- Conteúdo 2 - CRIA Hub-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">Junho 2023</span>
+            <h3 class="empresa-titulo"> CRIA Hub </h3>
+            <p class="empresa-texto">O CRIA hub surgiu da parceria entre a FAM e a CREFISA, trata-se de um concurso de inovação tecnológica. Participei do evento e meu grupo se classificou em 3° lugar. Desenvolvemos a ideia de aplicativo gamificado para os clientes da crefisa chamado "Byron Money-Coach" em que as funcionalidades incluiam <strong>simulador de empréstimos</strong>, <strong>educação financeira</strong>, <strong>gerenciador financeiro</strong>, <strong>jogos e quizzes interativos</strong> e um <strong>sistema de recompensas</strong> tudo ensinado pelo cachorro Byron.</p>
+            <div class="preview">
+              <img src="img/portifolio-CRIA.png" width="375" height="100">
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">3° colocada no concurso de inovação CRIA Hub 2.0 - Gamificação</span>
+            <ul class="empresa-habilidades">
+              <li>Figma</li>
+              <li>Game Deisgn</li>
+              <li>Motion Deisgn</li>
+              <li>Illustrator</li>
+              <li>web deisgn</li>
+              <li>Design gráfico</li>
+              <li>Ferramenta Canva</li>
+              <li>Trabalho em equipe</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <a class="portifolio" target="_blank" href="https://www.figma.com/proto/YzEjUFoN0xHRtHPfClyirN/CRIA-Crefisa?page-id=0%3A1&type=design&node-id=850-614&viewport=-5553%2C-5742%2C0.33&scaling=min-zoom&starting-point-node-id=850%3A614&show-proto-sidebar=1&mode=design">Acesso ao protótipo app aqui</a>
+            <a target="_blank" href="https://byronmoneycoach.github.io/educacaofinanceira/"> Você também pode ver o website que foi usado como base clicando aqui</a>
+          </div>
+        </div>
+
+        <!-- Conteúdo 2 - Jogo Analógico-->
+        <div class="empresa">
+          <div class="coluna1">
+            <span class="empresa-ano">2022-2023</span>
+            <h3 class="empresa-titulo"> Projeto Autoral - Jogo Analógico </h3>
+            <p class="empresa-texto"> Através sde um projeto de faculdade, desenvolvi um jogo analógico em conjunto com 3 colegas de sala e meu orientador Prof. Me. Leonardo Reitano. O jogo oferece uma expriência imersiva e desafiadora estimulando a cooperação e estratégia em um cenário de escassez de recursos. O jogo foi desenvolvido com o objetivo de fornecer ao público uma alternativa de entreterimento inovadora, que estimule o raciocínio crítico e ahbilidade de tomar decisões sob pressão, podendo ser jogado em grupos de 5 a 12 jogadores.</p>
+            <div class="preview">
+              <iframe src="https://30minutosparaofimdomundo.github.io" frameborder="0" width="600" height="400"></iframe>
+            </div>
+          </div>
+          <div class="coluna2">
+            <span class="empresa-titulo">Projeto Interdisciplinar "30 Minutos para o fim do mundo"</span>
+            <ul class="empresa-habilidades">
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Figma</li>
+              <li>Ferramenta Canva</li>
+              <li>Design Gráfico</li>
+            </ul>
+          </div>
+          <a class="portifolio" target="_blank" href="https://30minutosparaofimdomundo.github.io">Veja o site completo aqui</a>
+        </div>
+
+      </div>
+
+
+
+      <div id="conteudo-engenharia" style="display: none;">
+
+        <!-- Conteúdo 1 - Iniciação Científica -->
+        <div class="empresa">
+          <span class="empresa-ano">2021-2022</span>
+          <h3 class="empresa-titulo"> UNESP </h3>
+          <span class="empresa-titulo">Pesquisa de Iniciação Científica</span>
+          <p class="empresa-texto"> Trabalhei com bolsa junto ao professor Marcus Cesar Avezum Alves de Castro na pesquisa "Reflexos da Pandemia COVID-19 na geração e gestão dos resíduos domiciliares e de saúde" onde o objetivo geral foi analisar os impactos da pandemia nas etapas de geração, segregação, acondicionamento, coleta e tratamento de RSS nos municípios de São Caetano do Sul/SP e Rio Claro/SP, fazendo uma comparação nos períodos pré e pandêmico.
           <ul class="empresa-habilidades">
-            <li>WIX - Criador de Sites</li>
-            <li>WIX - Paymentes </li>
-            <li>Marketing</li>
+            <li>Trabalho em Equipe</li>
+            <li>Pesquisa de campo</li>
+            <li>Pesquisa literária</li>
+            <li>Manejo e tratamento de RSS</li>
+            <li>Criação de Artigo</li>
+          </ul>
+        </div>
+
+        <!-- Conteúdo 2 - Centro Acadêmico -->
+        <div class="empresa">
+          <span class="empresa-ano">2018-2019</span>
+          <h3 class="empresa-titulo">Centro Acadêmico de Engenharia Ambiental Chapa Dorothy Stang</h3>
+          <span class="empresa-titulo">Vice-Tesoureira</span>
+          <p class="empresa-texto">No centro acadêmico eu trabalhei representando o corpo estudantil frente à direção, orgãos colegiados e a coordenação do curso para criar uma ponte entre a adminstração da universidade em seus mais variados níveis e o corpo discente. Trabalhei atender as demandas dos alunos do curso, buscando consultar os alunos em qualquer assunto que seja de grande relevância e lutando para que seus direitos sejam respeitados e seus interesses atendidos.</p>
+          <ul class="empresa-habilidades">
+            <li>Auxiliar na movimentação de caixa</li>
+            <li>Representação de interesses do corpo discente</li>
+            <li>Organização de eventos estudantis</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+      <div id="conteudo-comunicacao" style="display: none;">
+
+        <!-- Conteúdo 1 - Acampamento IsWe -->
+        <div class="empresa">
+          <span class="empresa-ano">2018-Atualmente</span>
+          <h3 class="empresa-titulo">Acampamento ISWE</h3>
+          <span class="empresa-titulo">Monitora de projetos</span>
+          <p class="empresa-texto">O Acampamento IsWe é uma empresa que oferece desenvolvimento de projetos envolvendo criação de atividades interativas com crianças durante 1 semana do período de férias.
+          <ul class="empresa-habilidades">
+            <li>Trabalho em Equipe</li>
+            <li>Comunicação Social</li>
+            <li>Gestão das Redes Sociais</li>
+            <li>Conscientização</li>
+          </ul>
+        </div>
+
+        <!-- Conteúdo 2 - Professora de Inglês -->
+        <div class="empresa">
+          <span class="empresa-ano">2019-2021</span>
+          <h3 class="empresa-titulo">Professora Particular de Inglês</h3>
+          <span class="empresa-titulo">Professora</span>
+          <p class="empresa-texto"> Se tornar professora particular foi uma iniciativa minha para ajudar estudantes da faculdade a terem uma acesso mais direto e rapido à língua. </p>
+          <ul class="empresa-habilidades">
+            <li>Aulas particulares para todas as idades</li>
+            <li>Comunicação Acadêmica</li>
+            <li>Criação de conteúdos em inglês</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="conteudo-voluntariado" style="display: none;">
+        <!-- Conteúdo 1 - Projeto GAIA -->
+        <div class="empresa">
+          <span class="empresa-ano">2023-Atualmente</span>
+          <h3 class="empresa-titulo">Programa Estar - Projeto Gaia</h3>
+          <span class="empresa-titulo">Voluntariada</span>
+          <p class="empresa-texto"> Como iniciativa própria, comecei a participar como voluntariada do programa Estar o qual consiste em ações semanais de entregas de kits de alimentação, marmitas, roupas, calçados, kits de higiene e cobertores às pessoas em situação de rua. Um programa que exige presença, energia e ação constante. Além das entregas, usamos os encontros semanais para conscientizar os voluntários, levando assistentes sociais e líderes de instituições para compartilhar conhecimento. Confira o site do Projeto: <a target="_blank" href="https://www.projetogaia.com.br/programaestar/">Projeto Gaia</a></p>
+          <ul class="empresa-habilidades">
+            <li>Voluntariado</li>
             <li>Comunicação</li>
-            <li>Web Design</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://www.oastrolabio.com.br">Acesso ao design completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Agosto 2023 - Nov 2023</span>
-          <h3 class="empresa-titulo">Universidade Anhanguera São Paulo</h3>
-          <p class="empresa-texto">Iniciei meu estágio desenvolvendo o design completo do site oficial da Anhanguera SP através do Figma, Photoshop e Illustrator, e através do design criei os códigos das páginas utilizando HTML, CSS, JavaScript, Git e React. Como hospedagem utilizei a da Locaweb e através do GitHub actions realizei os deploys. Hoje desenvolvo os designs e códigos das novas landing pages do site.</p>
-          <div class="preview">
-            <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/" frameborder="0" width="600" height="400"></iframe>
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
-          <ul class="empresa-habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git Actions</li>
-            <li>Web Design</li>
-            <li>Landing Pages</li>
-            <li>Figma</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Design Gráfico</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-            <li>Marketing</li>
-            <li>E-Commerce</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/">Veja o site completo aqui</a>
-      </div>
-
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Nov 2023</span>
-          <h3 class="empresa-titulo">UNEGRO - União de Negros e Negras pela Igualdade.</h3>
-          <p class="empresa-texto">Dentro do meu estágio no grupo Anhanguera SP tive a oportunidade de criar o site para afiliados da UNEGRO. Fui responsável pelo design e criação da página.</p>
-          <div class="preview">
-            <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/UNEGROafiliado.html" frameborder="0" width="600" height="400"></iframe>
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
-          <ul class="empresa-habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git Actions</li>
-            <li>Web Design</li>
-            <li>Landing Pages</li>
-            <li>Figma</li>
-            <li>Design Gráfico</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/">Veja o site completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Nov 2023</span>
-          <h3 class="empresa-titulo">Prefeitura de São Paulo - Curso preparatório para concurso Público.</h3>
-          <p class="empresa-texto">Dentro do meu estágio no grupo Anhanguera SP tive a oportunidade de criar o site para a prefeitura de São Paulo anunciando os cursos preparatórios e os concursos para esses cursos. Fui responsável pelo design e criação da página.</p>
-          <div class="preview">
-            <iframe src="https://portifolioanhanguera.github.io/anhanguerasp/concursopublico.html" frameborder="0" width="600" height="400"></iframe>
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Estagiária de Web Design e Desenvolvedora Front End</span>
-          <ul class="empresa-habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git Actions</li>
-            <li>Web Design</li>
-            <li>Landing Pages</li>
-            <li>Figma</li>
-            <li>Design Gráfico</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://portifolioanhanguera.github.io/anhanguerasp/concursopublico.html">Veja o site completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Outubro 2023</span>
-          <h3 class="empresa-titulo"> Inpplay </h3>
-          <p class="empresa-texto"> Participei como freelancer na criação da Identidade Visual e Web Design da empresa através do programa Figma. Neste projeto aprofundei meus conhecimentos em E-commerce e pude me especializar ainda mais em UX/UI Design e Web Design.</p>
-          <div class="preview">
-            <img src="./img/portifolio-inpplay.png" alt="Imagem do portifolio" width="600" height="400">
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Freelancer de Web Design</span>
-          <ul class="empresa-habilidades">
-            <li>Figma</li>
-            <li>UX Design</li>
-            <li>UI Design</li>
-            <li>Web Design</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Marketing</li>
-            <li>E-Commerce</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://www.figma.com/file/7Vql9H9IiYy7xu7T3gsrW8/inpplay----Design?type=design&node-id=0%3A1&mode=design&t=Ldrz3iPutQ7yXkRU-1">Acesso ao design completo aqui</a>
-      </div>
-
-
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Junho 2023</span>
-          <h3 class="empresa-titulo"> SXB - Automação Condominial </h3>
-          <p class="empresa-texto"> Participei como freelancer na criação do web design da empresa através do programa Figma, e desenvolvi junto a equipe, o front-end da Home Page do site. Neste projeto tive a oportunidade de aprender mais a respeito de automação condominial e desenvolver minhas habilidade no framework React. </p>
-          <div class="preview">
-            <img src="img/portifolio-sxb.png" width="600" height="400">
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Freelancer de Web Designer e desenvolvedora front-end </span>
-          <ul class="empresa-habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Tailwind</li>
-            <li>Web Design</li>
-            <li>Figma</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://www.figma.com/proto/OtIITalTfWaA2mvTaUWLxj/SXB-NextApp?page-id=0%3A1&type=design&node-id=246-2&viewport=243%2C238%2C0.13&scaling=min-zoom&starting-point-node-id=246%3A2&mode=design">Acesso ao design completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">Junho 2023</span>
-          <h3 class="empresa-titulo"> CRIA Hub </h3>
-          <p class="empresa-texto">O CRIA hub surgiu da parceria entre a FAM e a CREFISA, trata-se de um concurso de inovação tecnológica. Participei do evento e meu grupo se classificou em 3° lugar. Desenvolvemos a ideia de aplicativo gamificado para os clientes da crefisa chamado "Byron Money-Coach" em que as funcionalidades incluiam <strong>simulador de empréstimos</strong>, <strong>educação financeira</strong>, <strong>gerenciador financeiro</strong>, <strong>jogos e quizzes interativos</strong> e um <strong>sistema de recompensas</strong> tudo ensinado pelo cachorro Byron.</p>
-          <div class="preview">
-            <img src="img/portifolio-CRIA.png" width="375" height="100">
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">3° colocada no concurso de inovação CRIA Hub 2.0 - Gamificação</span>
-          <ul class="empresa-habilidades">
-            <li>Figma</li>
-            <li>Game Deisgn</li>
-            <li>Motion Deisgn</li>
-            <li>Illustrator</li>
-            <li>web deisgn</li>
-            <li>Design gráfico</li>
-            <li>Ferramenta Canva</li>
             <li>Trabalho em equipe</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
           </ul>
-          <a class="portifolio" target="_blank" href="https://www.figma.com/proto/YzEjUFoN0xHRtHPfClyirN/CRIA-Crefisa?page-id=0%3A1&type=design&node-id=850-614&viewport=-5553%2C-5742%2C0.33&scaling=min-zoom&starting-point-node-id=850%3A614&show-proto-sidebar=1&mode=design">Acesso ao protótipo app aqui</a>
-          <a target="_blank" href="https://byronmoneycoach.github.io/educacaofinanceira/"> Você também pode ver o website que foi usado como base clicando aqui</a>
         </div>
 
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">2022-2023</span>
-          <h3 class="empresa-titulo"> Projeto Autoral </h3>
-          <p class="empresa-texto"> Desenvolvi através do curso da Origamid, para complementar meu portifólio, um website utilizando HTML, CSS e JavaScript. Através desse projeto, pude aprimorar minhas habilidades como desenvolvedora Front End e de forma 100% auto didata, consegui elaborar um website utlizando o Visual Studio Code e a plataforma Github.</p>
-          <div class="preview">
-            <iframe src="https://portifoliolaura.github.io" frameborder="0" width="600" height="400"></iframe>
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Website fictício Bikcraft</span>
+        <!-- Conteúdo 2 - Instituto Coelho -->
+        <div class="empresa">
+          <span class="empresa-ano">2023-Atualmente</span>
+          <h3 class="empresa-titulo">Instituto Coelho</h3>
+          <span class="empresa-titulo">Voluntariada</span>
+          <p class="empresa-texto"> O Instituto Coelho surgiu com uma missão ambiciosa: revolucionar a educação, ao unir de forma única a aprendizagem com atividades esportivas, tudo isso com o objetivo de impactar positivamente a vida dos estudantes em todo o país. Focados na inovação, criatividade e parcerias estratégicas, nosso compromisso é capacitar cidadãos na construção de suas carreiras e inspirá-los a buscar o crescimento profissional. Estamos aqui para ouvir atentamente e compreender as dificuldades que os estudantes e comunidades enfrentam, identificando problemas reais e criando oportunidades para debates construtivos onde todos possam contribuir com novas soluções. Meu papel no instituto é na parte de projetos onde estamos desenvolvendo um jogo para ensinar sustentabilidade para crianças de 11 a 14 anos. Confira o site do Projeto: <a target="_blank" href="https://institutocoelho.org.br">Instituto Coelho</a></p>
           <ul class="empresa-habilidades">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Git</li>
-            <li>Web Design</li>
+            <li>Voluntariado</li>
+            <li>Comunicação</li>
+            <li>Trabalho em equipe</li>
+            <li>Design de Games</li>
+            <li>Unity</li>
+            <li>Lógica de Programação</li>
           </ul>
         </div>
-        <a class="portifolio" target="_blank" href="https://portifoliolaura.github.io">Veja o site completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <div class="coluna1">
-          <span class="empresa-ano">2022-2023</span>
-          <h3 class="empresa-titulo"> Projeto Autoral - Jogo Analógico </h3>
-          <p class="empresa-texto"> Através sde um projeto de faculdade, desenvolvi um jogo analógico em conjunto com 3 colegas de sala e meu orientador Prof. Me. Leonardo Reitano. O jogo oferece uma expriência imersiva e desafiadora estimulando a cooperação e estratégia em um cenário de escassez de recursos. O jogo foi desenvolvido com o objetivo de fornecer ao público uma alternativa de entreterimento inovadora, que estimule o raciocínio crítico e ahbilidade de tomar decisões sob pressão, podendo ser jogado em grupos de 5 a 12 jogadores.</p>
-          <div class="preview">
-            <iframe src="https://30minutosparaofimdomundo.github.io" frameborder="0" width="600" height="400"></iframe>
-          </div>
-        </div>
-        <div class="coluna2">
-          <span class="empresa-titulo">Projeto Interdisciplinar "30 Minutos para o fim do mundo"</span>
-          <ul class="empresa-habilidades">
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Figma</li>
-            <li>Ferramenta Canva</li>
-            <li>Design Gráfico</li>
-          </ul>
-        </div>
-        <a class="portifolio" target="_blank" href="https://30minutosparaofimdomundo.github.io">Veja o site completo aqui</a>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2021-2022</span>
-        <h3 class="empresa-titulo"> UNESP </h3>
-        <span class="empresa-titulo">Pesquisa de Iniciação Científica</span>
-        <p class="empresa-texto"> Trabalhei com bolsa junto ao professor Marcus Cesar Avezum Alves de Castro na pesquisa "Reflexos da Pandemia COVID-19 na geração e gestão dos resíduos domiciliares e de saúde" onde o objetivo geral foi analisar os impactos da pandemia nas etapas de geração, segregação, acondicionamento, coleta e tratamento de RSS nos municípios de São Caetano do Sul/SP e Rio Claro/SP, fazendo uma comparação nos períodos pré e pandêmico.
-        <ul class="empresa-habilidades">
-          <li>Trabalho em Equipe</li>
-          <li>Pesquisa de campo</li>
-          <li>Pesquisa literária</li>
-          <li>Manejo e tratamento de RSS</li>
-          <li>Criação de Artigo</li>
-
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2018-2023</span>
-        <h3 class="empresa-titulo">Acampamento ISWE</h3>
-        <span class="empresa-titulo">Monitora de projetos</span>
-        <p class="empresa-texto">O Acampamento IsWe é uma empresa que oferece desenvolvimento de projetos envolvendo criação de atividades interativas com crianças durante 1 semana do período de férias.
-        <ul class="empresa-habilidades">
-          <li>Trabalho em Equipe</li>
-          <li>Comunicação Social</li>
-          <li>Gestão das Redes Sociais</li>
-          <li>Conscientização</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2019-2021</span>
-        <h3 class="empresa-titulo">Professora Particular de Inglês</h3>
-        <span class="empresa-titulo">Professora</span>
-        <p class="empresa-texto"> Se tornar professora particular foi uma iniciativa minha para ajudar estudantes da faculdade a terem uma acesso mais direto e rapido à língua. </p>
-        <ul class="empresa-habilidades">
-          <li>Aulas particulares para todas as idades</li>
-          <li>Comunicação Acadêmica</li>
-          <li>Criação de conteúdos em inglês</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2018-2019</span>
-        <h3 class="empresa-titulo">Centro Acadêmico de Engenharia Ambiental Chapa Dorothy Stang</h3>
-        <span class="empresa-titulo">Vice-Tesoureira</span>
-        <p class="empresa-texto">No centro acadêmico eu trabalhei representando o corpo estudantil frente à direção, orgãos colegiados e a coordenação do curso para criar uma ponte entre a adminstração da universidade em seus mais variados níveis e o corpo discente. Trabalhei atender as demandas dos alunos do curso, buscando consultar os alunos em qualquer assunto que seja de grande relevância e lutando para que seus direitos sejam respeitados e seus interesses atendidos.</p>
-        <ul class="empresa-habilidades">
-          <li>Auxiliar na movimentação de caixa</li>
-          <li>Representação de interesses do corpo discente</li>
-          <li>Organização de eventos estudantis</li>
-        </ul>
       </div>
     </div>
   </section>
@@ -418,7 +724,27 @@
       <p class="footer-copy"> Laura Bezerra. Todos os Direitos Reservados</p>
     </div>
   </footer>
-  <script src="JS/spaceinvaders.js"></script>
+
+  <script>
+    function mostrarConteudo(pasta) {
+      // Oculta todos os conteúdos
+      document.querySelectorAll('.experiencia div[id^="conteudo-"]').forEach(function (el) {
+        el.style.display = 'none';
+      });
+      // Mostra o conteúdo da pasta clicada
+      document.getElementById('conteudo-' + pasta).style.display = 'block';
+    }
+
+    function mostrarSubconteudo(subpasta) {
+      // Oculta todos os subconteúdos
+      document.querySelectorAll('.design-subconteudo').forEach(function (el) {
+        el.style.display = 'none';
+      });
+      // Mostra o subconteúdo da subpasta clicada
+      document.getElementById('subconteudo-' + subpasta).style.display = 'block';
+    }
+  </script>
+
 </body>
 
 </html>
