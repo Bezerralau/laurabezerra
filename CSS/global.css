@@ -33,6 +33,7 @@ img {
 
 .pastas button {
   margin-top: 20px;
+  margin-bottom: 30px;
   text-decoration: none;
   display: inline-block;
   padding: 16px 32px;
@@ -51,5 +52,10 @@ img {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
+  }
+
+  .pastas button {
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
 }

@@ -33,4 +33,10 @@
   .carrossel ul {
     gap: 20px;
   }
+  .carrossel img {
+    display: block;
+  }
+  .preview img {
+    display: block;
+  }
 }
